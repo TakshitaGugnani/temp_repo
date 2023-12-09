@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bdy">
+        <button onclick="Green()">Green</button>
+        <button onclick="Orange()">Orange</button>
+        <button onclick="blue()">Blue</button>
+
+        <script>
+              function Green()
+              {
+                  document.getElementById('bdy').style.backgroundColor="Green"
+                  setTimeout(Orange,1000)
+              }
+              function Orange()
+              {
+                  document.getElementById('bdy').style.backgroundColor="Orange"
+                  setTimeout(blue,1500)
+              }
+              function blue()
+              {
+                  document.getElementById('bdy').style.backgroundColor="blue"
+                  setTimeout(red,1500)
+              }
+        </script>
+</body>
+</html>
